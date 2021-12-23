@@ -1,12 +1,14 @@
-// import logo from './logo.svg'
 import './App.css'
-import './login/SignInSide'
-// import Button from '@mui/material/Button'
-import SignInSide from './login/SignInSide'
+import './page/login/SignInSide'
+import SignInSide from './page/login/SignInSide'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+
 function App() {
   return (
     <div className="App">
-      <SignInSide />
+      <Link to="/signup">singup</Link>
+      <br></br>
+      <Link to="/signin">singin</Link>
     </div>
   )
 }
